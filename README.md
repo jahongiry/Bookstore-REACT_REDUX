@@ -20,37 +20,18 @@ To get a copy of this project running on your local computer, do the followings:
 
 ### Setup
 
-- Install _VSCode_ ([link](https://code.visualstudio.com/download))
 - Clone this project repository on your local computer. ([link](https://github.com/jahongiry/Bookstore-REACT_REDUX.git))
-- Open the project directory with _VSCode_
+- git clone ...
+- cd directory_of_project
+- git checkout branch_to_check or git switch branch_to_check
+- npm install
 
-### Install
-
-Open _Terminal/Shell_ inside your _VSCode_ and run
-
-```
-  npm install --force
+### Run the project
 
 ```
+npm start
 
 ```
- npm start
-```
-
-### Run tests
-
-- For running project
-
-`npm start`
-
-- For _style_ tests, run
-  ```
-    npm run lint:style
-  ```
-- For _eslint_ tests, run
-  ```
-    npm run lint:es
-  ```
 
 ## Authors
 
@@ -72,3 +53,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Fellow Micronauts
+
+```
+
+```
