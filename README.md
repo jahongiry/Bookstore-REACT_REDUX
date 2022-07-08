@@ -21,10 +21,26 @@ To get a copy of this project running on your local computer, do the followings:
 ### Setup
 
 - Clone this project repository on your local computer. ([link](https://github.com/jahongiry/Bookstore-REACT_REDUX.git))
-- git clone ...
-- cd directory_of_project
-- git checkout branch_to_check or git switch branch_to_check
-- npm install
+
+```
+git clone https://github.com/jahongiry/Bookstore-REACT_REDUX.git
+
+```
+
+```
+cd directory_of_project
+
+```
+
+```
+git checkout branch_to_check or git switch branch_to_check
+
+```
+
+```
+npm install
+
+```
 
 ### Run the project
 
