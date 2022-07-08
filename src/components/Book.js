@@ -1,10 +1,17 @@
-/* eslint-disable react/prop-types */
-function Book({ props }) {
+import PropTypes from 'prop-types';
+
+function Book({ title, author }) {
   return (
     <div>
-      <p>{props.title}</p>
-      <p>{props.author}</p>
+      <p>{title}</p>
+      <p>{author}</p>
     </div>
   );
 }
+
+Book.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
+
 export default Book;

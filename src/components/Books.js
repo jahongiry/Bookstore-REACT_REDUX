@@ -2,7 +2,7 @@ import Book from './Book';
 import Form from './Form';
 
 const sampleBooks = {
-  naming: 'Zero to One',
+  title: 'Zero to One',
   author: 'Peter Thiel',
 };
 
