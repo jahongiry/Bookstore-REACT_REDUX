@@ -1,4 +1,5 @@
-function Book(props) {
+/* eslint-disable react/prop-types */
+function Book({ props }) {
   return (
     <div>
       <p>{props.title}</p>

@@ -3,7 +3,7 @@ function Form() {
     <form>
       <input type="text" required id="title" placeholder="Book title" />
       <input type="text" required id="author" placeholder="Book author" />
-      <button>Add book</button>
+      <button type="submit">Add book</button>
     </form>
   );
 }

@@ -1,7 +1,7 @@
 function Categories() {
   return (
     <div>
-      <button>Check status</button>
+      <button type="submit">Check status</button>
     </div>
   );
 }
