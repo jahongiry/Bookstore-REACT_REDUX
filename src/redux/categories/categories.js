@@ -1,12 +1,14 @@
+const CHECK_STATUS = 'CHECK_STATUS';
+
 const categoriesReducer = (state = [], action) => {
-  if (action.type === 'checkStatus') {
+  if (action.type === CHECK_STATUS) {
     return ['Under Construction'];
   }
   return state;
 };
 
 export const statusAction = () => ({
-  type: 'checkStatus',
+  type: CHECK_STATUS,
 });
 
 export default categoriesReducer;

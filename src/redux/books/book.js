@@ -1,5 +1,8 @@
+const ADD = 'bookstore/books/ADD';
+const REMOVE = 'bookstore/books/REMOVE';
+
 const bookReducer = (state = [], action) => {
-  if (action.type === 'add') {
+  if (action.type === ADD) {
     return [
       ...state,
       {
@@ -10,7 +13,7 @@ const bookReducer = (state = [], action) => {
     ];
   }
 
-  if (action.type === 'remove') {
+  if (action.type === REMOVE) {
     return state.filter((item) => item.id !== action.id);
   }
 
@@ -18,14 +21,14 @@ const bookReducer = (state = [], action) => {
 };
 
 export const addingAction = ({ id, title, author }) => ({
-  type: 'add',
+  type: ADD,
   id,
   title,
   author,
 });
 
 export const removingAction = ({ id }) => ({
-  type: 'remove',
+  type: REMOVE,
   id,
 });
 
