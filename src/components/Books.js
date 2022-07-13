@@ -11,7 +11,7 @@ function Books() {
     <div>
       <div>
         <Book title={sampleBooks.title} author={sampleBooks.author} />
-        <button type="submit">Reamove</button>
+        <button type="submit">Remove</button>
       </div>
       <Form />
     </div>
