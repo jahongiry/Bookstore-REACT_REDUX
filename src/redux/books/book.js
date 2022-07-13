@@ -1,13 +1,16 @@
 const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
 
-const bookReducer = (state = [], action) => {
+const bookReducer = (
+  state = [{ id: 'firstId', title: 'initial title', author: 'initial author' }],
+  action,
+) => {
   if (action.type === ADD) {
     return [
       ...state,
       {
         id: action.id,
-        bookName: action.title,
+        title: action.title,
         author: action.author,
       },
     ];

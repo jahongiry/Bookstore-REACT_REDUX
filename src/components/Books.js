@@ -1,17 +1,20 @@
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import Form from './Form';
 
-const sampleBooks = {
-  title: 'Zero to One',
-  author: 'Peter Thiel',
-};
-
 function Books() {
+  const bookList = useSelector((state) => state.book);
   return (
     <div>
       <div>
-        <Book title={sampleBooks.title} author={sampleBooks.author} />
-        <button type="submit">Remove</button>
+        {bookList.map((book) => (
+          <Book
+            key={book.id}
+            title={book.title}
+            author={book.author}
+            ids={book.id}
+          />
+        ))}
       </div>
       <Form />
     </div>
