@@ -1,21 +1,19 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { statusAction } from '../redux/categories/categories';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { STATUS } from '../redux/categories/categories';
 
-function Categories() {
+const Categories = () => {
+  const text = useSelector((state) => state.categories);
   const dispatch = useDispatch();
-  const status = useSelector((state) => state.category);
-
-  const checkStatus = () => {
-    dispatch(statusAction());
-  };
 
   return (
     <div>
-      <button onClick={checkStatus} type="submit">
-        Check status
+      <button type="button" onClick={() => dispatch(STATUS())}>
+        CHECK STATUS
       </button>
-      <h2>{status}</h2>
+      <p>{text}</p>
     </div>
   );
-}
+};
+
 export default Categories;
