@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import classes from './Books.module.css';
 import Book from './book-item';
 import Form from './Form';
 import { selectAllBooks } from '../redux/books/book';
@@ -9,7 +10,7 @@ const Books = () => {
   return (
     <>
       <div>
-        <ul>
+        <ul className={classes.ul}>
           {allBooks.map((book) => (
             <Book
               id={book.id}

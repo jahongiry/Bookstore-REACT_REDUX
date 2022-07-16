@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../redux/books/book';
+import classes from './book-item.module.css';
 
 const Book = ({
   author, title, category, id,
@@ -13,36 +14,50 @@ const Book = ({
   };
   return (
     <li>
-      <div>
-        <div>
-          <div>
-            <h4>{category}</h4>
-            <h2>{title}</h2>
-            <h6>{author}</h6>
-            <div>
-              <button type="button">Comments</button>
+      <div className={classes.main}>
+        <div className={classes.content}>
+          <div className={classes.info}>
+            <h4 className={classes.fiction}>{category}</h4>
+            <h2 className={classes.title}>{title}</h2>
+            <h6 className={classes.author}>{author}</h6>
+            <div className={classes.cre}>
+              <button className={classes.buttonOutline} type="button">
+                Comments |
+              </button>
               <div />
               <button
-                className="button-outline"
+                className={classes.buttonOutline}
                 type="button"
                 onClick={handleClick}
                 id={id}
               >
                 {' '}
-                Remove
+                Remove |
               </button>
               <div />
-              <button type="button">Edit</button>
+              <button className={classes.buttonOutline} type="button">
+                Edit
+              </button>
             </div>
           </div>
-          <div>
-            <div>
-              <div />
+          <div className={classes.progressContainer}>
+            <div className={classes.circularProgressContainer}>
+              <div className={classes.circularProgress} />
             </div>
-            <div />
-            <div>
+            <div className={classes.progressStat}>
+              <p className={classes.percentcComplete}>50%</p>
+              <p className={classes.completed}>Completed</p>
+            </div>
+            <div className={classes.progressDivider} />
+            <div className={classes.currentChapterContainer}>
               <div>
-                <button type="button">UPDATE PROGRESS</button>
+                <p className={classes.currentChapterLabel}>CURRENT CHAPTER</p>
+                <p className={classes.currentChapter}>Chapter 20</p>
+              </div>
+              <div>
+                <button className={classes.primaryButton} type="button">
+                  UPDATE PROGRESS
+                </button>
               </div>
             </div>
           </div>
