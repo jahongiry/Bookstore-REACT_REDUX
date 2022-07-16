@@ -36,7 +36,7 @@ const Form = () => {
           type="text"
           className={classes.input}
           name="title"
-          placeholder="Title"
+          placeholder="Book title"
           value={title}
           onChange={handleChange}
           required

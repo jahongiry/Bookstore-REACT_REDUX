@@ -19,12 +19,14 @@ const Book = ({
           <div className={classes.info}>
             <h4 className={classes.fiction}>{category}</h4>
             <h2 className={classes.title}>{title}</h2>
-            <h6>{author}</h6>
+            <h6 className={classes.author}>{author}</h6>
             <div className={classes.cre}>
-              <button type="button">Comments |</button>
+              <button className={classes.buttonOutline} type="button">
+                Comments |
+              </button>
               <div />
               <button
-                className="button-outline"
+                className={classes.buttonOutline}
                 type="button"
                 onClick={handleClick}
                 id={id}
@@ -33,7 +35,9 @@ const Book = ({
                 Remove |
               </button>
               <div />
-              <button type="button">Edit</button>
+              <button className={classes.buttonOutline} type="button">
+                Edit
+              </button>
             </div>
           </div>
           <div className={classes.progressContainer}>
