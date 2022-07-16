@@ -1,14 +1,13 @@
-const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
+import { createSlice } from '@reduxjs/toolkit';
 
-const categoriesReducer = (state = [], action) => {
-  if (action.type === CHECK_STATUS) {
-    return ['Under Construction'];
-  }
-  return state;
-};
-
-export const statusAction = () => ({
-  type: CHECK_STATUS,
+const CategoriesSlice = createSlice({
+  name: 'bookstore/categories',
+  initialState: [],
+  reducers: {
+    STATUS: () => 'Under Construction',
+  },
 });
 
-export default categoriesReducer;
+export const { STATUS } = CategoriesSlice.actions;
+
+export default CategoriesSlice.reducer;
