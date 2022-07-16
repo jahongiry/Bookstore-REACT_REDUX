@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+.main {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cre {
+  display: flex;
+}
+
+.cre button {
+  color: #8da1cd;
+  border: none;
+  background-color: white;
+}
+
+.fiction {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+.title {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 0.188rem;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+}
+
+.circularProgressContainer {
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: 0.63rem 0.625rem 0.75rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circularProgress {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  border-bottom-color: #e8e8e8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.completed,
+.percentComplete {
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+}
+
+.progressDivider {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
+}
+
+.currentChapterContainer {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  gap: 20px;
+  width: 14rem;
+}
+
+.currentChapter,
+.currentChapterLabel {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #121212;
+}
+
+.currentChapterLabel {
+  font-size: 0.813rem;
+  opacity: 0.5;
+}
+
+.primaryButton {
+  cursor: pointer;
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+}

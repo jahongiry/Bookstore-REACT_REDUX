@@ -1,0 +1,45 @@
+.logo {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(1, 144, 255);
+}
+
+.iconButton {
+  cursor: pointer;
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  color: #0290ff;
+}
+
+.span {
+  color: #0290ff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 5%);
+}
+
+.container {
+  background-color: white;
+}
+
+.ulContainer {
+  margin-left: -30rem;
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+.lists {
+  color: rgb(152, 114, 113);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
